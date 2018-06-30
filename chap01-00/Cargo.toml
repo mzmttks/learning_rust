@@ -1,0 +1,6 @@
+[package]
+name = "chap01-00"
+version = "0.1.0"
+authors = ["mzmttks <ta.mizumoto@gmail.com>"]
+
+[dependencies]

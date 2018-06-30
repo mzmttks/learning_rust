@@ -1,0 +1,7 @@
+[package]
+name = "chap01-02"
+version = "0.1.0"
+authors = ["mzmttks <ta.mizumoto@gmail.com>"]
+
+[dependencies]
+unicode-segmentation = "1.1.0"
