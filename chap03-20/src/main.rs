@@ -38,15 +38,13 @@ fn main() {
 
     for line in decoded.trim().split("\n") {
         let obj: Value = serde_json::from_str(line).unwrap();
-        if obj.text.contains(&keyword) {
-            found_articles.push(obj);
+        if obj.title.contains(&keyword) {
+            found_articles.push(obj.text);
         }
     }
-    let mut handle = File::create("england.json").unwrap();
+    let mut handle = File::create("england.txt").unwrap();
     for found_article in &found_articles {
-        let out_json = serde_json::to_string(&found_article).unwrap();
-        handle.write(&out_json.as_bytes()).unwrap();
+        handle.write(&found_article.as_bytes()).unwrap();
         handle.write("\n".as_bytes()).unwrap();
     }
-
 }
