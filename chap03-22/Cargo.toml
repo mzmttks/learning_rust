@@ -1,0 +1,7 @@
+[package]
+name = "chap03-22"
+version = "0.1.0"
+authors = ["Takeshi Mizumoto <t.mizumoto@hylable.com>"]
+
+[dependencies]
+regex = "1.0"
